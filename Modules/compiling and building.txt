@@ -1,0 +1,12 @@
+activate emcc in admin console:
+    cd emsdk
+    .\emsdk activate latest --permanent
+
+compile:
+    emcc main.cpp
+
+run:
+	node a.out.js
+
+create WASM module:
+    emcc main.cpp -o main.wasm -s WASM=1

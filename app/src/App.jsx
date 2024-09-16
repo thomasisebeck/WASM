@@ -20,7 +20,7 @@ function App() {
             <input type={"number"} onChange={e => setNumbers({...numbers, a: e.target.value})}/>
             <input type={"number"} onChange={e => setNumbers({...numbers, b: e.target.value})}/>
             <br/>
-            <button onClick={handleClick}/>
+            <button onClick={handleClick}>get result</button>
             <p>Result: {result}</p>
         </>
     )
